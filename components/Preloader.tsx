@@ -49,7 +49,7 @@ const interval = setInterval(() => {
 
           {revealing && (
             <div
-              className="w-16 h-16 bg-[#9564F4] scale-[1] animate-square-zoom z-10 "
+              className="w-16 h-16 rounded-full bg-[#9564F4] scale-[1] animate-square-zoom z-10 "
             />
           )}
 
