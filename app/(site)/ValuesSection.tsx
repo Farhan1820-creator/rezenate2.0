@@ -35,7 +35,7 @@ export default function ValuesSection() {
               md:max-w-[90%] 
               lg:max-w-[75%] 
               xl:max-w-[60%] 
-              2xl:max-w-[35%]
+              2xl:max-w-[40%]
               mx-auto 
               mb-4
               md:mb-0
