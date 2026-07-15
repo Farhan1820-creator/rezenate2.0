@@ -55,13 +55,13 @@ export default function ValuesSection() {
 </div>
 
          <div className="relative flex flex-col w-1/3 md:w-1/2">
-  <div className="relative  right-[70%]  md:top-2 md:right-[37] lg:bottom-1 lg:right-[53] xl:right-[70]">
+  <div className="relative  right-[90%]  md:top-2 md:right-[37] lg:bottom-1 lg:right-[53] xl:right-[70]">
     <ValueCard item={values[0]} /> {/* Meraki */}
   </div>
-  <div className="relative top-2 right-[80%]   md:top-6 md:right-[80] lg:top-7 lg:right-[120] xl:right-[140]">
+  <div className="relative top-2 right-[105%]   md:top-6 md:right-[80] lg:top-7 lg:right-[120] xl:right-[140]">
     <ValueCard item={values[1]} /> {/* Wisdom */}
   </div>
-  <div className="relative right-[70%]  top-4 md:top-10 md:right-[37] lg:top-14 lg:right-[53] xl:right-[70]">
+  <div className="relative right-[90%]  top-4 md:top-10 md:right-[37] lg:top-14 lg:right-[53] xl:right-[70]">
     <ValueCard item={values[2]} /> {/* Upekkha */}
   </div>
   <div className="relative right-[178%]  top-8 md:top-20 md:right-[107%] lg:top-33 lg:right-[112%] xl:right-[120%] 2xl:right-[110%]">
