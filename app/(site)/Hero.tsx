@@ -3,7 +3,7 @@ import ScrollButton from "./ScrollButton";
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center  pt-50 xl:pt-60 text-center overflow-hidden bg-[url('/hero/background.webp')] bg-cover bg-center  h-[101vh] md:h-[125vh] lg:h-[112vh] xl:h-[131vh]">
+    <section className="relative flex flex-col items-center  pt-50 xl:pt-60 text-center overflow-hidden bg-[url('/hero/background.webp')] bg-cover bg-center  h-[116vh] md:h-[125vh] lg:h-[112vh] xl:h-[131vh]">
       <div className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 auto-width relative z-10">
         <h1
           className="animate-blur-reveal  font-boldonse md:max-w-[90%] lg:max-w-[90%] xl:max-w-[90%] text-xl sm:text-2xl md:text-[39px] lg:text-[40px] xl:text-[44px] leading-[182.2%] text-center"
