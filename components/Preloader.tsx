@@ -3,7 +3,6 @@
 import PreloaderLogo from "./PreloaderLogo";
 
 import { useEffect, useState } from "react";
-import Logo from "./Logo";
 
 export default function Preloader({ children }: { children: React.ReactNode }) {
   const [percent, setPercent] = useState(0);
@@ -21,7 +20,7 @@ const interval = setInterval(() => {
     }
     return prev + 1;
   });
-}, 40); // 40ms * 100 = 4000ms
+}, 35); // 35ms * 100 = 3500ms
 
     return () => clearInterval(interval);
   }, []);
