@@ -82,11 +82,11 @@ export default function ValuesSection() {
               }}
               className={
                 index === 0
-                  ? "sm:relative right-[90%] md:right-[103] md:bottom-0 md:top-4 lg:bottom-0 lg:top-8 xl:bottom-0  xl:top-8 2xl:top-0 lg:right-[19] xl:right-[42] 2xl:right-[54]"
+                  ? "sm:relative right-[90%] md:right-[103] md:bottom-0 md:top-4 lg:bottom-0 lg:top-8 xl:bottom-0  xl:top-8 2xl:top-5 lg:right-[19] xl:right-[42] 2xl:right-[50]"
                   : index === 1
-                  ? "sm:relative top-2 right-[105%] md:top-5 md:right-[133] lg:top-12 lg:right-[82] xl:top-12 xl:right-[97] 2xl:top-7 2xl:right-[120]"
+                  ? "sm:relative top-2 right-[105%] md:top-5 md:right-[133] lg:top-12 lg:right-[82] xl:top-12 xl:right-[97] 2xl:top-11 2xl:right-[115]"
                   : index === 2
-                  ? "sm:relative right-[90%] top-4 md:top-6 md:right-[103] lg:top-16 lg:right-[19] xl:right-[42] xl:top-16 2xl:right-[54] 2xl:top-16"
+                  ? "sm:relative right-[90%] top-4 md:top-6 md:right-[103] lg:top-16 lg:right-[19] xl:right-[42] xl:top-16 2xl:right-[50] 2xl:top-16"
                   : "sm:relative right-[178%] top-8 md:top-18 md:right-[187%] lg:top-20 lg:right-[101%] xl:right-[101%] 2xl:right-[101%] 2xl:top-25 "
               }
             >
