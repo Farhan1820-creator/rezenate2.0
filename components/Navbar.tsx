@@ -37,22 +37,28 @@ export default function Navbar() {
 
   return (
     <header className="absolute w-full top-0 left-0 z-50 flex items-center justify-center">
-      <div className="flex items-center text-center justify-between w-full auto-width pt-5 px-[16px] md:px-0">
+      <div className="flex items-center text-center justify-between w-full auto-width pt-5 px-[16px] md:px-3">
         <Link href="#home">
           <Logo />
         </Link>
 
-        <nav className="hidden lg:flex items-center">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="hover:bg-[#9564F4] hover:text-white px-2 lg:px-5 py-1 rounded-3xl font-outfit text-[16px] lg:text-[18px]"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+ <nav className="hidden lg:flex items-center gap-1">
+  {navLinks.map((link) => (
+    <Link
+      key={link.href}
+      href={link.href}
+      className={`relative min-w-fit text-center  px-3 py-1 font-outfit text-[16px] lg:text-[18px] transition-colors duration-200
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:bg-[#9564F4]
+        after:w-full after:origin-center after:-translate-x-1/2
+        after:transition-transform after:duration-300
+        ${active === link.href
+          ? "text-white bg-[#9564F4] rounded-3xl after:scale-x-0 px-6 mr-2 xl:mr-3"
+          : "after:scale-x-0 hover:after:scale-x-90"}`}
+    >
+      {link.label}
+    </Link>
+  ))}
+</nav>
 
         <Link
           href="#contact"

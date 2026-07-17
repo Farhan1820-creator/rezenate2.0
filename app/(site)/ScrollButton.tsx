@@ -9,7 +9,7 @@ export default function ScrollButton() {
       onClick={() => {
         document.getElementById("next-section")?.scrollIntoView({ behavior: "smooth" });
       }}
-      className="relative w-[105px] h-[105px] md:w-[165px] md:h-[167px] flex flex-col items-center justify-center group cursor-pointer"
+      className="relative w-[105px] h-[105px] md:w-[110px] lg:w-[150px] md:h-[167px] xl:w[200px] xl:h-[200px]  flex flex-col items-center justify-center group cursor-pointer"
       aria-label="Scroll to explore"
     >
       {/* Background image: circle + curved "SCROLL TO EXPLORE" text */}
