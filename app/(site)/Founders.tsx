@@ -43,11 +43,11 @@ function FounderCard({ founder, index }: { founder: Founder; index: number }) {
         opacity: { duration: 0.6, ease: "easeOut", delay: index * 0.2 },
         y: { duration: 0.7, ease: "easeOut", delay: index * 0.2 },
       }}
-      className="relative rounded-[30px]  md:rounded-[40px] overflow-hidden w-[350px] h-[470px] md:w-[330px] md:h-[450px] lg:w-[445px] lg:h-[580px] xl:w-[490px] xl:h-[621px]  2xl:w-[542px] 2xl:h-[651px]   mix-blend-multiply shadow-[0px_4px_20px_5px_rgba(148,100,244,0.22)]"
+      className="relative rounded-[30px]  md:rounded-[40px] overflow-hidden w-[350px] h-[470px] md:w-[330px] md:h-[450px] lg:w-[445px] lg:h-[580px] xl:w-[490px] xl:h-[621px]  2xl:w-[542px] 2xl:h-[651px]   mix-blend-multiply shadow-[0px_4px_20px_5px_rgba(148,100,244,0.22)]  hover:shadow-[0px_4px_20px_5px_rgba(148,100,244,0.3)] cursor-pointer duration-300"
     >
       {/* Background layer — fixed, decoupled from content so it never distorts */}
       <div
-        className="absolute inset-0 bg-[url('/founders/card-bg.png')] bg-cover bg-center -z-10"
+        className="absolute inset-0 bg-[url('/founders/card-bg.webp')] bg-cover bg-center -z-10"
       />
 
       {/* Content block — Figma: 394x468, centered inside the 542x651 card */}

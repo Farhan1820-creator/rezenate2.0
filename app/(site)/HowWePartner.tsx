@@ -149,10 +149,10 @@ export default function HowWePartner() {
   };
 
   return (
-    <section className="relative py-20 px-4 bg-background">
-      <div className="absolute top-0 left-0 right-0 h-[1200px] bg-[url('/hwp/background2.png')] bg-cover bg-center -z-10" />
+    <section className="relative py-20 px-4  ">
+      <div className="absolute top-0 left-0 right-0 h-[1200px] bg-[url('/hwp/background.webp')]  bg-cover bg-center -z-10" />
 
-      <h2 className="font-readex-pro text-center text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] mb-4">
+      <h2 className=" font-readex-pro text-center text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] mb-4">
         How We <span className="font-tartuffo text-[#9564F4]">partner</span>
       </h2>
       <p className="font-outfit text-center text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px] text-black max-w-full md:max-w-xl lg:max-w-3xl mx-auto mb-12 tracking-wide">
