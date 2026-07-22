@@ -9,7 +9,7 @@ import LeadTheWayCTA from "./LTW";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="bg-background">
       <Hero />
       <StrategySection/>
       <ValuesSection />
@@ -17,6 +17,6 @@ export default function HomePage() {
       <TheFounders/>
       <LeadershipCTA/>
       <LeadTheWayCTA/>
-    </>
+      </div>
   );
 }

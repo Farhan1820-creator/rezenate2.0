@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function StrategySection() {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden bg-background">
       {/* Full-width background image */}
       <img
         src="/strategy/image.png"

@@ -57,7 +57,7 @@ export default function ValuesSection() {
     <section
       ref={ref}
       id="next-section"
-      className="relative  py-15 lg:py-18 xl:py-20 md:pb-25 lg:pb-35 xl:pb-40 2xl:pb-50 w-full flex flex-col items-center justify-center bg-white"
+      className="relative  py-15 lg:py-18 xl:py-20 md:pb-25 lg:pb-35 xl:pb-40 2xl:pb-50 w-full flex flex-col items-center justify-center bg-background"
     >
       <h2 className="text-[22px] md:text-[30px] lg:text-[38px] text-center max-w-[95%] md:max-w-[90%] lg:max-w-[75%] xl:max-w-[60%] 2xl:max-w-[40%] mx-auto mb-4 md:mb-0 lg:mb-15 xl:mb-19 font-boldonse leading-[151.8%]">
         The way we work should reflect the way we live.

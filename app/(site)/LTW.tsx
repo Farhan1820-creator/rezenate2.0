@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function LeadTheWayCTA() {
   return (
-<section className="relative overflow-hidden h-[70vh] md:h-[75vh] lg:h-[100vh] flex flex-col items-center bg-[url('/LTW/bg-image.png')] bg-cover bg-center ">
+<section className="relative overflow-hidden h-[70vh] md:h-[75vh] lg:h-[100vh] flex flex-col items-center bg-[url('/LTW/bg-image.png')] bg-cover bg-center bg-background ">
 
   <div className="flex-1 flex flex-col items-center justify-center">
 
@@ -61,7 +61,7 @@ export default function LeadTheWayCTA() {
 
         <footer className="relative bottom-0 w-full bg-[#8B5CF6] py-4 mt-auto flex items-center justify-center">
     <p className="text-center font-outfit font-normal text-[18px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] text-white ">
-      © Rezenate 2025. All rights reserved.
+      © Rezenate 2026. All rights reserved.
     </p>
   </footer>
     </section>
