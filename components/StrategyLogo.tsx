@@ -9,7 +9,7 @@ export default function StrategyLogo({
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 35 35"
       fill="none"
-      className="w-[30px] h-[30px] sm:w-[76px] sm:h-[76px]"
+      className="w-[8px] h-[8px] lg:w-[30px] lg:h-[30px] sm:w-[76px] sm:h-[76px]"
     >
       <path
         className="animate-strategy-path-1"

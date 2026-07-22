@@ -48,7 +48,7 @@ export default function StrategySection() {
       </div>
 
       {/* Logo animation - white variant, right side */}
-      <div className="absolute top-1/2 right-[28%] -translate-y-1/2 hidden lg:block">
+      <div className="absolute top-1/2 right-[22%] lg:right-[28%] -translate-y-1/2 hidden md:block">
         <StrategyLogo color="white" />
       </div>
 
