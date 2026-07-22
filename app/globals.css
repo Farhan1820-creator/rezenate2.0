@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #fdfdfb;
   --foreground: #171717;
-  --muted-foreground: #cf0707;
+      --muted-foreground: #474747;
+
 }
 
 @theme inline {
@@ -16,16 +17,17 @@
   --font-boldonse: var(--font-boldonse-display);
   --font-mulish: var(--font-mulish);
   --font-unbounded: var(--font-unbounded);
+  --font-instrument-serif: var(--font-instrument-serif);
+  --font-readex-pro: var(--font-readex-pro);  
+    --font-tartuffo: var(--font-tartuffo);
+      --font-inter: var(--font-inter);
+
+
+
 }
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --muted-foreground: #5b5b5b;
-  }
-}
+
 
 body {
   font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
@@ -163,3 +165,52 @@ body {
     transform: translateY(6px);
   }
 }
+
+@keyframes strategy-path-1 {
+  0%, 50%   { opacity: 0; transform: scale(0.9); }
+  70%  { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; }
+}
+
+@keyframes strategy-path-2 {
+  0%, 30%   { opacity: 0; transform: scale(0.8); }
+  50%  { opacity: 1; transform: scale(1); }
+  100% { opacity: 0;  }
+}
+
+@keyframes strategy-path-3 {
+  0%   { opacity: 0; transform: translate(60%, -40%); }
+  30%  { opacity: 1; transform: translate(0, 0); }
+  100% { opacity: 0; }
+}
+
+.animate-strategy-path-1 { animation: strategy-path-1 5s ease-in infinite; }
+.animate-strategy-path-2 { animation: strategy-path-2 5s ease-in infinite; }
+.animate-strategy-path-3 { animation: strategy-path-3 5s ease-in infinite; }
+
+@keyframes lead-way-path-1 {
+  0%, 45% { opacity: 0; transform: scale(0.8); }
+  50%, 100%      { opacity: 1; transform: scale(1); }
+}
+
+@keyframes lead-way-path-2 {
+  0%, 30%{ opacity: 0; transform: scale(0.9); }
+  40%, 100%      { opacity: 1; transform: scale(1); }
+}
+
+@keyframes lead-way-path-3 {
+  0% { opacity: 0; transform: translate(120%, -80%); border-radius: 50%; }
+  20%, 100%  { opacity: 1; transform: translate(0, 0); border-radius: 0%; }
+}
+
+.animate-lead-way-path-1 { animation: lead-way-path-1 6s ease-in-out infinite; }
+.animate-lead-way-path-2 { animation: lead-way-path-2 6s ease-in-out infinite; }
+.animate-lead-way-path-3 { animation: lead-way-path-3 6s ease-in-out infinite; }
+
+.animate-lead-way-path-1,
+.animate-lead-way-path-2,
+.animate-lead-way-path-3 {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+

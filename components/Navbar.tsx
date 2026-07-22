@@ -37,17 +37,18 @@ export default function Navbar() {
 
   return (
     <header className="absolute w-full top-0 left-0 z-50 flex items-center justify-center">
-      <div className="flex items-center text-center justify-between w-full auto-width pt-5 px-[16px] md:px-3">
+      <div className="flex items-center text-center justify-between w-full auto-width pt-5 px-[16px] md:px-3  ">
         <Link href="#home">
           <Logo />
         </Link>
 
- <nav className="hidden lg:flex items-center gap-1">
+<nav className="hidden lg:flex items-center gap-1 rounded-full p-[2px] bg-gradient-to-r from-white via-white via-20% to-[#9564F4]">
+  <div className="flex items-center gap-1 bg-gradient-to-r from-[#fdf7ff] via-[#fdf7ff] via-20% to-[#faebfe] rounded-full py-3 px-5 xl:py-4 xl:px-6">
   {navLinks.map((link) => (
     <Link
       key={link.href}
       href={link.href}
-      className={`relative min-w-fit text-center  px-3 py-1 font-outfit text-[16px] lg:text-[18px] transition-colors duration-200
+      className={`relative min-w-fit text-center  px-3 py-1 font-outfit text-[16px] lg:text-[16px] transition-colors duration-200
         after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:bg-[#9564F4]
         after:w-full after:origin-center after:-translate-x-1/2
         after:transition-transform after:duration-300
@@ -58,11 +59,11 @@ export default function Navbar() {
       {link.label}
     </Link>
   ))}
+</div>
 </nav>
-
         <Link
           href="#contact"
-          className="hidden lg:inline-block rounded-full border px-5 py-2 lg:px-8 lg:py-3 hover:bg-black hover:text-white transition-colors font-boldonse text-center lg:text-[12px] lg:text-[14px]"
+          className="hidden lg:inline-block rounded-full border px-5 py-2 lg:px-8 lg:py-2 hover:bg-black hover:text-white transition-colors font-outfit text-center lg:text-[18px] xl:text-[20px]"
         >
           Contact us
         </Link>
@@ -124,7 +125,7 @@ export default function Navbar() {
           <Link
             href="#contact"
             onClick={() => setOpen(false)}
-            className="rounded-full border px-6 py-3 text-center font-semibold hover:bg-black hover:text-white transition-colors"
+            className="rounded-full border px-6 py-3 text-center font-outfit hover:bg-black hover:text-white transition-colors"
           >
             Contact us
           </Link>
