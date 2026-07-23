@@ -20,7 +20,7 @@ export default function LeadershipCTA() {
       {/* Bottom gradient overlay */}
       <div className="absolute bottom-[-40vh] md:bottom-[-40vh] lg:bottom-[-54vh] xl:bottom-[-67vh] 2xl:bottom-[-75vh] left-0 right-0 z-1   h-full pointer-events-none">
         <Image
-          src="/leadership/bottom.png"
+          src="/leadership/bottom.webp"
           alt=""
           fill
           className="object-cover object-top"
