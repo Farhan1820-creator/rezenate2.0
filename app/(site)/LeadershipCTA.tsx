@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 export default function LeadershipCTA() {
   return (
-    <section className="relative overflow-hidden h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[110vh] 2xl:h-[120vh]   py-18 md:py-0 flex items-center md:justify-auto justify-center bg-[url('/leadership/bg-image3.png')] bg-cover bg-center   md:bg-cover md:bg-top bg-background">
+    <section className="relative overflow-hidden h-[60vh] md:h-[60vh] lg:h-[80vh] xl:h-[100vh] 2xl:h-[120vh]   py-18 md:py-0 flex items-center md:justify-auto justify-center bg-[url('/leadership/bg-image3.webp')] bg-cover bg-center   md:bg-cover md:bg-top bg-background">
 
       {/* Foreground — rotated flower shape, top-right */}
-      <div className="absolute z-0 top-[-250px]  md:right-[-40]  lg:right-[-2] xl:right-0 2xl:right-[0px]  md:h-[990px]  md:w-[400px] lg:h-[1000px] lg:w-[480px]  xl:h-[1100px] xl:w-[650px]  2xl:h-[1309px] 2xl:w-[800px]">
+      <div className="absolute z-0 top-[-250px]   md:right-[0]  lg:right-[-55] xl:right-0 2xl:right-[0px]  md:h-[790px]  md:w-[160px] lg:h-[1000px] lg:w-[480px]  xl:h-[1100px] xl:w-[650px]  2xl:h-[1309px] 2xl:w-[800px]">
         <Image
-          src="/leadership/fg-image.png"
+          src="/leadership/fg-image.webp"
           alt=""
           fill
           className="object-cover object-center "
@@ -28,13 +28,13 @@ export default function LeadershipCTA() {
       </div>
 
       {/* Content */}
-      <div className="relative auto-width px-[16px] md:px-3 md:pt-40 lg:pt-40 xl:pt-50 2xl:pt-80 z-10 flex flex-col items-center jusify-center md:justify-auto gap-6 text-center w-full overflow-hidden">
+      <div className="relative auto-width px-[16px] md:px-3 md:pt-0 lg:pt-10 xl:pt-20  z-10 flex flex-col items-center jusify-center md:justify-auto gap-6 text-center w-full overflow-hidden">
         <motion.h2
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="font-readex-pro font-light text-black capitalize text-[32px] md:text-[38px] lg:text-[45px] xl:text-[50px] 2xl:text-[60px] md:px-[100px] lg:px-[150px] xl:px-[240px]   mt-4   "
+          className="font-readex-pro font-light text-black capitalize text-[32px] md:text-[38px] lg:text-[45px] xl:text-[50px] 2xl:text-[60px] md:px-[100px] lg:px-[150px] xl:px-[240px]      "
           style={{ lineHeight: "114%" }}
         >
           Leadership shapes the way people experience work and{" "}

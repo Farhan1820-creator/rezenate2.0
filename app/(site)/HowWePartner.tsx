@@ -58,13 +58,12 @@ const PARTNER_STEPS: PartnerStep[] = [
 function ChevronIcon({ isOpen }: { isOpen: boolean }) {
   return (
     <svg
-      width="14"
-      height="14"
+   
       viewBox="0 0 14 14"
       fill="none"
-      className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}
+      className={`transition-transform duration-300 h-[16px] w-[16px] lg:h-[18px] lg:w-[18px] 2xl:h-[25px] 2xl:w-[20px] ${isOpen ? "rotate-180" : "rotate-0"}`}
     >
-      <polygon points="1,4 7,10 13,4" fill="#9564F4" />
+      <polygon points="1,4 7,13 12,4" fill="#9564F4" />
     </svg>
   );
 }
@@ -105,12 +104,12 @@ function AccordionItem({
           {step.title}
         </span>
 
-        <span className="font-outfit font-normal text-black flex-1 hidden md:block text-[16px] lg:text-[22px] xl:text-[24px] leading-[115%]">
+        <span className="font-outfit font-normal text-black flex-1 hidden md:block text-[16px] md:text-[18px] lg:text-[22px] xl:text-[24px] leading-[115%]">
           {step.subtitle}
         </span>
 
         <span
-          className={`w-7 h-7 md:w-9 md:h-9 rounded-full border flex items-center justify-center shrink-0 transition-colors duration-300 ${
+          className={`w-7 h-7 md:w-10 md:h-10 lg:w-11 lg:h-11 xl:w-12 xl:h-12  rounded-full outline-1 outline-[#e1d2ff] shadow-sm border flex items-center justify-center shrink-0 transition-colors duration-300 ${
             isOpen ? "border-[#9564F4] bg-[#9564F4]/10" : "border-purple-300"
           }`}
         >
@@ -149,19 +148,19 @@ export default function HowWePartner() {
   };
 
   return (
-    <section className="relative py-20 px-4  ">
-      <div className="absolute top-0 left-0 right-0 h-[1200px] bg-[url('/hwp/background.webp')]  bg-cover bg-center -z-10" />
+    <section className="relative py-20 px-4 bg-background   ">
+      <div className="absolute top-0 left-0 right-0 h-[1200px] bg-[url('/hwp/background.webp')] bg-cover bg-center " />
 
-      <h2 className=" font-readex-pro text-center text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] mb-4">
+      <h2 className=" relative z-1 font-readex-pro text-center text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] mb-4">
         How We <span className="font-tartuffo text-[#9564F4]">partner</span>
       </h2>
-      <p className="font-outfit text-center text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px] text-black max-w-full md:max-w-xl lg:max-w-3xl mx-auto mb-12 tracking-wide">
+      <p className="relative z-1 font-outfit text-center text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px] text-black max-w-full md:max-w-xl lg:max-w-3xl mx-auto mb-12 tracking-wide">
         We partner with founders and boards to introduce leaders who strengthen culture
         and build momentum without losing what makes the company human. Every engagement
         moves through five deliberate stages.
       </p>
 
-      <div className="max-w-4xl md:max-w-[95%] lg:max-w-[80%] 2xl:max-w-[59%] mx-auto flex flex-col gap-5">
+      <div className="relative max-w-4xl md:max-w-[95%] lg:max-w-[80%] 2xl:max-w-[59%] mx-auto flex flex-col gap-5 ">
         {PARTNER_STEPS.map((step, index) => (
           <motion.div
             key={step.id}

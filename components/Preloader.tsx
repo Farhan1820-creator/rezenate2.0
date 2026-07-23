@@ -48,13 +48,13 @@ export default function Preloader({ children }: { children: React.ReactNode }) {
   return (
     <>
       {!hidden && (
-        <div className="fixed inset-0 z-[100] bg-[url('/preloader/background.png')] bg-cover bg-center flex items-center justify-center overflow-hidden bg-[#efe2fc]">
+        <div className="fixed inset-0 z-[100] bg-[url('/preloader/background.webp')] bg-cover bg-center flex items-center justify-center overflow-hidden bg-[#efe2fc]">
           {!revealing && (
             <div className="relative flex flex-col items-center justify-center">
               {/* Rotating flower petals */}
               <div className="absolute w-[550px] h-[550px] md:w-[980px] md:h-[980px] lg:w-[1080px] lg:h-[1080px] xl:w-[1100px] xl:h-[1100px] 2xl:w-[1280px] 2xl:h-[1280px] animate-[spin_12s_linear_infinite]">
                 <Image
-                  src="/preloader/spinner.png"
+                  src="/preloader/spinner.webp"
                   alt=""
                   fill
                   className="object-contain"

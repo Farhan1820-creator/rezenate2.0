@@ -7,16 +7,16 @@ import { motion } from "framer-motion";
 
 export default function StrategySection() {
   return (
-    <section className="relative w-full overflow-hidden bg-background">
+    <section className="relative w-full overflow-hidden bg-background h-[60vh] md:h-full ">
       {/* Full-width background image */}
       <img
-        src="/strategy/image.png"
+        src="/strategy/image.webp"
         alt=""
-        className=" w-[400px] h-[600px] top-10 md:h-full left-36 md:w-[100%] md:left-20 lg:w-[100%] lg:left-15 xl:w-[90%] xl:left-10 2xl:w-[89%] 2xl:left-5 ml-auto object-cover relative  "
+        className=" w-[300px] h-[450px]  md:h-full left-8 md:w-[100%] md:left-20 lg:w-[100%] lg:left-15 xl:w-[90%] xl:left-10 2xl:w-[89%] 2xl:left-5 ml-auto object-cover relative  "
       />
 
       {/* Text content overlay - left side */}
-      <div className="absolute inset-0 flex left-4 top-40 md:left-8 md:top-20 lg:left-12 lg:top-40 xl:left-32 xl:top-50  2xl:left-60 2xl:top-65">
+      <div className="absolute inset-0 flex left-4 top-10 md:left-8 md:top-20 lg:left-12 lg:top-40 xl:left-32 xl:top-50  2xl:left-60 2xl:top-65">
         <div>
           <div className="max-w-[75%] md:max-w-1/2">
             <motion.h2
@@ -48,22 +48,21 @@ export default function StrategySection() {
       </div>
 
       {/* Logo animation - white variant, right side */}
-      <div className="absolute top-1/2 right-[22%] lg:right-[28%] -translate-y-1/2 hidden md:block">
+      <div className="absolute  top-[65%] right-[13%] lg:top-[57%] lg:right-[18%] xl:top-[55%] xl:right-[18%] 2xl:top-[55%] 2xl:right-[20%] -translate-y-1/2 hidden md:block">
         <StrategyLogo color="white" />
       </div>
 
-      {/* Blurred quote card */}
       {/* Blurred quote card */}
 <motion.div
   initial={{ opacity: 0, y: 60 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, amount: 0.4 }}
   transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-  className="absolute w-[150px] md:w-[210px] md:bottom-[5%] md:right-[10.3%] lg:w-[250px] lg:bottom-[17%] lg:right-[18.7%] xl:w-[320px] xl:bottom-[17%] xl:right-[18.7%]  2xl:w-[440px] 2xl:bottom-[17%] 2xl:right-[19.3%]"
+  className="absolute w-[150px] md:w-[210px] md:bottom-[8%] md:right-[10.3%] lg:w-[250px] lg:bottom-[17%] lg:right-[18.7%] xl:w-[320px] xl:bottom-[17%] xl:right-[18.7%]  2xl:w-[440px] 2xl:bottom-[17%] 2xl:right-[19.3%] hidden md:block"
 >
   <div className="relative w-full">
     <Image
-      src="/strategy/blur-box.png"
+      src="/strategy/blur-box.webp"
       alt="Quote card"
       width={440}
       height={300}

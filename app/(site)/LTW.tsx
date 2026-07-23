@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function LeadTheWayCTA() {
   return (
-<section className="relative overflow-hidden h-[70vh] md:h-[75vh] lg:h-[100vh] flex flex-col items-center bg-[url('/LTW/bg-image.png')] bg-cover bg-center bg-background ">
+<section className="relative overflow-hidden h-[70vh] md:h-[75vh] lg:h-[100vh] flex flex-col items-center bg-[url('/LTW/bg-image.webp')] bg-cover bg-center bg-background ">
 
   <div className="flex-1 flex flex-col items-center justify-center">
 
@@ -35,7 +35,7 @@ export default function LeadTheWayCTA() {
         }}
         className="relative z-10 h-[200px] w-[360px] md:h-[200px] md:w-[625px] lg:h-[230px] lg:w-[718px] xl:h-[320px] xl:w-[1000px] 2xl:h-[350px] 2xl:w-[1083px] mx-auto flex flex-col items-center justify-center text-center px-5 sm:px-10 rounded-[20px] md:rounded-[24px] lg:rounded-[28px] xl:rounded-[35px] 2xl:rounded-[36.50px]"
         style={{
-          backgroundImage: "url('/LTW/foreground.png')",
+          backgroundImage: "url('/LTW/foreground.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
