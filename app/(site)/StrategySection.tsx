@@ -58,7 +58,7 @@ export default function StrategySection() {
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, amount: 0.4 }}
   transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-  className="absolute w-[150px] md:w-[210px] md:bottom-[8%] md:right-[10.3%] lg:w-[250px] lg:bottom-[17%] lg:right-[18.7%] xl:w-[320px] xl:bottom-[17%] xl:right-[18.7%]  2xl:w-[440px] 2xl:bottom-[17%] 2xl:right-[19.3%] hidden md:block"
+  className="absolute w-[150px] md:w-[210px] md:bottom-[8%] md:right-[10.3%] lg:w-[250px] lg:bottom-[17%] lg:right-[18.7%] xl:w-[320px] xl:bottom-[17%] xl:right-[18.7%]  2xl:w-[440px] 2xl:bottom-[17%] 2xl:right-[19.3%] hidden md:block "
 >
   <div className="relative w-full">
     <Image

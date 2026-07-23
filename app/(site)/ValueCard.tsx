@@ -4,18 +4,18 @@ import { ValueItem } from "./values";
 
 export default function ValueCard({ item }: { item: ValueItem }) {
   return (
-<div className="relative rounded-[22px] border border-gray-200 hover:border-purple-200 w-[92vw] h-[80px] md:w-[335px] md:h-[75px] lg:w-[445px] lg:h-[90px]  xl:w-[605px] xl:h-[120px]  2xl:w-[675px] 2xl:h-[130px] p-5 flex items-center gap-4 bg-white 
+<div className="relative rounded-[22px] border border-gray-200 hover:border-purple-200 w-[92vw] h-[80px] md:w-[335px] md:h-[75px] lg:w-[445px] lg:h-[100px]  xl:w-[605px] xl:h-[120px]  2xl:w-[675px] 2xl:h-[130px] p-5 flex items-center gap-4 bg-white 
 group  transition-all duration-300 ease-out  hover:border-[#9564F4]/20 hover:scale-[1.01] hover:shadow-[0_8px_30px_rgba(149,100,244,0.12)] cursor-pointer">      
-<div className=" shrink-0 flex items-center justify-center overflow-hidden w-[50px] md:w-[39px] lg:w-[50px] xl:w-[68px] 2xl:w-[70px]">
+<div className=" shrink-0 flex items-center justify-center overflow-hidden w-[50px] md:w-[39px] lg:w-[60px] xl:w-[68px] 2xl:w-[70px]">
         <img src={item.icon} alt="" />
       </div>
           <div className="absolute top-3  right-3 md:top-4 md:right-4 xl:top-5 xl:right-4 text-purple-500 text-[12px] md:text-[12px] lg:text-[16px] xl:text-[18px] font-mulish">{item.number}</div>
-      <div className="flex-1 px-4">
+      <div className="flex-1 lg:px-0 xl:px-4">
         <div className="flex items-center justify-between">
-          <h3 className= "text-[18px] md:text-[20px] lg:text-[26px] xl:text-[28px] 2xl:text-[32px] font-normal font-readex-pro font-semibold xl:leading-[152%]">{item.title}</h3>
+          <h3 className= "text-[18px] md:text-[16px] lg:text-[23px] xl:text-[28px] 2xl:text-[32px] font-normal font-readex-pro font-semibold xl:leading-[152%]">{item.title}</h3>
         </div>
         {item.description && (
-          <p className=" text-black text-[14px] md:text-[14px] lg:text-[16px] xl:text-[19px] 2xl:text-[18px] font-mulish font-medium leading-6 md:leading-6 xl:leading-[25px] max-w-[95%] 2xl:max-w-[90%] ">{item.description}</p>
+          <p className=" text-black text-[14px] md:text-[11px] lg:text-[15px] xl:text-[19px] 2xl:text-[18px] font-mulish font-medium  md:leading-4 lg:leading-5 xl:leading-[25px] max-w-[95%] 2xl:max-w-[90%] ">{item.description}</p>
         )}
       </div>
     </div>

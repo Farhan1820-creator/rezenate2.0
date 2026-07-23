@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function LeadershipCTA() {
   return (
-    <section className="relative overflow-hidden h-[60vh] md:h-[60vh] lg:h-[80vh] xl:h-[100vh] 2xl:h-[120vh]   py-18 md:py-0 flex items-center md:justify-auto justify-center bg-[url('/leadership/bg-image3.webp')] bg-cover bg-center   md:bg-cover md:bg-top bg-background">
+    <section className="relative overflow-hidden h-[60vh] md:h-[60vh] lg:h-[80vh] xl:h-[100vh] 2xl:h-[120vh]   py-0 flex items-center md:justify-auto justify-center bg-[url('/leadership/bg-image3.webp')] bg-cover bg-center   md:bg-cover md:bg-top bg-background">
 
       {/* Foreground — rotated flower shape, top-right */}
       <div className="absolute z-0 top-[-250px]   md:right-[0]  lg:right-[-55] xl:right-0 2xl:right-[0px]  md:h-[790px]  md:w-[160px] lg:h-[1000px] lg:w-[480px]  xl:h-[1100px] xl:w-[650px]  2xl:h-[1309px] 2xl:w-[800px]">

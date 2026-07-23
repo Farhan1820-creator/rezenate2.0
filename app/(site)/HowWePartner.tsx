@@ -148,13 +148,13 @@ export default function HowWePartner() {
   };
 
   return (
-    <section className="relative py-20 px-4 bg-background bg-[url('/hwp/background.webp')] bg-cover bg-center   ">
-      <div className="absolute top-0 left-0 right-0 h-[1200px] " />
+    <section className="relative py-0 px-4 bg-background bg-[url('/hwp/background.webp')] bg-cover bg-center   ">
+      <div className="absolute top-0 left-0 right-0  " />
 
       <h2 className=" relative z-1 font-readex-pro text-center text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] mb-4">
         How We <span className="font-tartuffo text-[#9564F4]">partner</span>
       </h2>
-      <p className="relative z-1 font-outfit text-center text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px] text-black max-w-full md:max-w-xl lg:max-w-3xl mx-auto mb-12 tracking-wide">
+      <p className="relative z-1 font-outfit text-center text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px] text-black max-w-full md:max-w-xl lg:max-w-3xl 2xl:max-w-[50%] mx-auto mb-12 tracking-wide">
         We partner with founders and boards to introduce leaders who strengthen culture
         and build momentum without losing what makes the company human. Every engagement
         moves through five deliberate stages.

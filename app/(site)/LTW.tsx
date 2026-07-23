@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function LeadTheWayCTA() {
   return (
-<section className="relative overflow-hidden h-[70vh] md:h-[75vh] lg:h-[100vh] flex flex-col items-center bg-[url('/LTW/bg-image.webp')] bg-cover bg-center bg-background ">
+<section className="relative overflow-hidden pt-12 md:pt-15 xl:pt-20 h-[60vh] md:h-[75vh] lg:h-[100vh] flex flex-col items-center bg-[url('/LTW/bg-image.webp')] bg-cover bg-center bg-background ">
 
   <div className="flex-1 flex flex-col items-center justify-center">
 
