@@ -10,12 +10,12 @@ group  transition-all duration-300 ease-out  hover:border-[#9564F4]/20 hover:sca
         <img src={item.icon} alt="" />
       </div>
           <div className="absolute top-3  right-3 md:top-4 md:right-4 xl:top-5 xl:right-4 text-purple-500 text-[12px] md:text-[12px] lg:text-[16px] xl:text-[18px] font-mulish">{item.number}</div>
-      <div className="flex-1">
+      <div className="flex-1 px-4">
         <div className="flex items-center justify-between">
-          <h3 className= "text-[18px] md:text-[20px] lg:text-[26px] xl:text-[28px] 2xl:text-[32px] font-normal font-readex-pro xl:leading-[152%]">{item.title}</h3>
+          <h3 className= "text-[18px] md:text-[20px] lg:text-[26px] xl:text-[28px] 2xl:text-[32px] font-normal font-readex-pro font-semibold xl:leading-[152%]">{item.title}</h3>
         </div>
         {item.description && (
-          <p className=" text-muted-foreground text-[14px] md:text-[14px] lg:text-[16px] xl:text-[19px] 2xl:text-[21px] font-mulish leading-6 md:leading-6 xl:leading-8">{item.description}</p>
+          <p className=" text-black text-[14px] md:text-[14px] lg:text-[16px] xl:text-[19px] 2xl:text-[18px] font-mulish font-medium leading-6 md:leading-6 xl:leading-[25px] max-w-[95%] 2xl:max-w-[90%] ">{item.description}</p>
         )}
       </div>
     </div>

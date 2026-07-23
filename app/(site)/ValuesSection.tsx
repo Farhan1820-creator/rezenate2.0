@@ -57,10 +57,14 @@ export default function ValuesSection() {
     <section
       ref={ref}
       id="next-section"
-      className="relative  py-15 lg:py-18 xl:py-20 md:pb-25 lg:pb-35 xl:pb-40 2xl:pb-50 w-full flex flex-col items-center justify-center bg-background"
+      className="relative  py-15 lg:py-18 xl:py-20 md:pb-25 lg:pb-35 xl:pb-20 2xl:pb-20 w-full flex flex-col items-center justify-center bg-background"
     >
-      <h2 className="text-[22px] md:text-[30px] lg:text-[38px] text-center max-w-[95%] md:max-w-[90%] lg:max-w-[75%] xl:max-w-[60%] 2xl:max-w-[40%] mx-auto mb-4 md:mb-0 lg:mb-15 xl:mb-19 font-boldonse leading-[151.8%]">
-        The way we work should reflect the way we live.
+      <h2 className="text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] text-center max-w-[65%] md:max-w-[65%] lg:max-w-[59%] xl:max-w-[55%] 2xl:max-w-[50%] mx-auto mb-4 md:mb-0 lg:mb-15 xl:mb-19 font-readex-pro leading-[114.8%]">
+        The way we work should reflect{" "}
+                      <span className="font-tartuffo italic text-[#9564F4] ">
+
+         the way we live.
+         </span>
       </h2>
 
       <div className="sm:relative auto-width flex flex-col sm:flex-row items-center justify-center">
@@ -80,14 +84,17 @@ export default function ValuesSection() {
                 delay: index * 0.15,
                 ease: [0.25, 0.1, 0.25, 1],
               }}
+
               className={
                 index === 0
-                  ? "sm:relative right-[90%] md:right-[103]  md:top-4  lg:top-2   lg:right-[6] xl:top-8 xl:right-[15] 2xl:right-[11] 2xl:top-2"
+                  ? "sm:relative z-10 top-2 right-[105%] md:top-5 md:right-[133] lg:top-4 lg:right-[60] xl:top-12 xl:right-[82] 2xl:top-5 2xl:right-[50]"
                   : index === 1
-                  ? "sm:relative top-2 right-[105%] md:top-5 md:right-[133] lg:top-4 lg:right-[60] xl:top-12 xl:right-[82] 2xl:top-5 2xl:right-[70]"
+                  ? "sm:relative z-10 right-[90%] md:right-[103]  md:top-4  lg:top-2   lg:right-[6] xl:top-12 xl:right-[15] 2xl:right-[-22] 2xl:top-8"
                   : index === 2
-                  ? "sm:relative right-[90%] top-4 md:top-6 md:right-[103] lg:top-6 lg:right-[6] xl:right-[11] xl:top-16 2xl:right-[11] 2xl:top-8"
-                  : "sm:relative right-[178%] top-8 md:top-18 md:right-[187%] lg:top-20 lg:right-[101%] xl:right-[101%] 2xl:right-[101%] 2xl:top-35 "
+                  ? "sm:relative z-10 top-2 right-[105%] md:top-5 md:right-[133] lg:top-4 lg:right-[60] xl:top-12 xl:right-[82] 2xl:top-12 2xl:right-[50]"
+                  : index === 3
+                  ? "sm:relative z-10 right-[90%] md:right-[103]  md:top-4  lg:top-2   lg:right-[6] xl:top-12 xl:right-[15] 2xl:right-[-22] 2xl:top-16"
+                  : "sm:relative z-10 right-[178%] top-8 md:top-18 md:right-[187%] lg:top-20 lg:right-[101%] xl:right-[101%] 2xl:right-[101%] 2xl:top-25 "
               }
             >
               <ValueCard item={item} />
