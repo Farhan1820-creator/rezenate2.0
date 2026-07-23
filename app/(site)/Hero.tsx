@@ -3,7 +3,7 @@ import ScrollButton from "./ScrollButton";
 
 export default function Hero() {
   return (
-  <section className="relative flex flex-col items-center pt-44 lg:pt-45 xl:pt-45 text-center overflow-hidden bg-[url('/hero/background.webp')] bg-cover bg-center h-[100vh] md:h-[87vh] lg:h-[105vh] xl:h-[125vh] 2xl:h-[135vh]">
+  <section id="home" className="relative flex flex-col items-center pt-44 lg:pt-45 xl:pt-45 text-center overflow-hidden bg-[url('/hero/background.webp')] bg-cover bg-center h-[100vh] md:h-[87vh] lg:h-[105vh] xl:h-[125vh] 2xl:h-[135vh]">
       
       {/* Overlay layer */}
       <img

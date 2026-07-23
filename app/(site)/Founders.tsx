@@ -90,7 +90,7 @@ function FounderCard({ founder, index }: { founder: Founder; index: number }) {
 
 export default function TheFounders() {
   return (
-    <section className="relative px-[16px] md:px-3 py-12 md:py-15 lg:py-18 xl:py-20 lg:px-4 bg-background">
+    <section id="founders" className="relative px-[16px] md:px-3 py-12 md:py-15 lg:py-18 xl:py-20 lg:px-4 bg-background">
       <h2 className="relative z-2 font-readex-pro text-center text-[32px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] xl:mb-4">
         The <span className="font-tartuffo text-[#9564F4]">founders</span>
       </h2>

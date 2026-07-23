@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function StrategySection() {
   return (
-    <section className="relative w-full overflow-hidden bg-background h-[60vh] md:h-full ">
+    <section id="philosophy" className="relative w-full overflow-hidden bg-background h-[60vh] md:h-full ">
       {/* Full-width background image */}
       <img
         src="/strategy/image.webp"

@@ -17,6 +17,7 @@ const navLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("#home");
+  const [scrolled, setScrolled] = useState(false);
 
   // Lock scroll + block touch when menu is open
   useEffect(() => {
@@ -35,8 +36,46 @@ export default function Navbar() {
     };
   }, [open]);
 
+  // Toggle navbar background after 70vh scroll
+  useEffect(() => {
+    const threshold = window.innerHeight * 0.7;
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > threshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // set initial state in case page loads mid-scroll
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Track active section on scroll (IntersectionObserver)
+  useEffect(() => {
+    const sections = navLinks
+      .map((link) => document.getElementById(link.href.slice(1)))
+      .filter(Boolean) as HTMLElement[];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(`#${entry.target.id}`);
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -40% 0px", threshold: 0 } // detection band at viewport middle
+    );
+
+    sections.forEach((sec) => observer.observe(sec));
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <header className="absolute w-full top-0 left-0 z-50 flex items-center justify-center">
+    <header
+      className={`fixed w-full top-0 left-0 z-50 flex items-center justify-center transition-all duration-300  ${
+        scrolled ? "bg-white shadow-md py-3 duration-300" : "bg-transparent"
+      }`}
+    >
       <div className="flex items-center text-center justify-between w-full auto-width pt-5 px-[16px] md:px-3  ">
         <Link href="#home">
           <Logo />
@@ -51,9 +90,9 @@ export default function Navbar() {
       className={`relative min-w-fit text-center  px-3 py-1 font-outfit text-[16px] lg:text-[16px] transition-colors duration-200
         after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:bg-[#9564F4]
         after:w-full after:origin-center after:-translate-x-1/2
-        after:transition-transform after:duration-300
+        after:transition-transform after:duration-300 rounded-3xl
         ${active === link.href
-          ? "text-white bg-[#9564F4] rounded-3xl after:scale-x-0 px-6 mr-2 xl:mr-3"
+          ? "text-white bg-[#9564F4]  after:scale-x-0 px-6 mr-2 xl:mr-3 duration-300"
           : "after:scale-x-0 hover:after:scale-x-90"}`}
     >
       {link.label}
@@ -108,10 +147,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={() => {
-                    setActive(link.href);
-                    setOpen(false);
-                  }}
+                  onClick={() => setOpen(false)}
                   className={`py-4 border-b border-[#f1f1f1] text-lg font-medium w-full ${
                     active === link.href ? "text-[#9564F4]" : "text-black"
                   }`}

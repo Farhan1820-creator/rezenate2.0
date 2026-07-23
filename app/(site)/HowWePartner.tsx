@@ -148,7 +148,7 @@ export default function HowWePartner() {
   };
 
   return (
-    <section className="relative py-0 px-4 bg-background bg-[url('/hwp/background.webp')] bg-cover bg-center   ">
+    <section id="how-we-partner" className="relative py-0 px-4 bg-background bg-[url('/hwp/background.webp')] bg-cover bg-center   ">
       <div className="absolute top-0 left-0 right-0  " />
 
       <h2 className=" relative z-1 font-readex-pro text-center text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] mb-4">
