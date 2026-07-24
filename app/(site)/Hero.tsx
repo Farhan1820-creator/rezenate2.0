@@ -3,14 +3,9 @@ import ScrollButton from "./ScrollButton";
 
 export default function Hero() {
   return (
-  <section id="home" className="relative flex flex-col items-center pt-44 lg:pt-45 xl:pt-45 text-center overflow-hidden bg-[url('/hero/background.webp')] bg-cover bg-center h-[100vh] md:h-[87vh] lg:h-[105vh] xl:h-[125vh] 2xl:h-[135vh]">
+  <section id="home" className="relative flex flex-col items-center pt-44 lg:pt-45 xl:pt-45 text-center overflow-hidden bg-[url('/hero/background.webp')] bg-cover bg-center  h-[100vh] md:h-[116vh] lg:h-[115vh] xl:h-[125vh] 2xl:h-[127vh]">
       
-      {/* Overlay layer */}
-      <img
-        src="/hero/overlay.png"
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
-      />
+
       
       <div className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 auto-width relative z-10 ">
         <h1
@@ -32,18 +27,27 @@ export default function Hero() {
         </p>
       </div>
 
-      <img
-        src="/hero/foreground.png"
-        alt=""
-        className="absolute bottom-0 w-full object-cover object-top  hidden md:block"
-      />
-      <img
-        src="/hero/mobile-foreground.png"
-        alt=""
-        className="absolute bottom-0 w-full object-cover object-top md:hidden h-[590px]"
-      />
+  {/* Foreground shape */}
+<img
+  src="/hero/foreground-final.png"
+  alt=""
+  className="absolute bottom-65 lg:bottom-24 xl:bottom-0 md:left-15 lg:left-12 xl:left-32 2xl:left-14 lg:w-[2400px] lg:h-[700px] md:scale-[2.6] lg:scale-[1.4] xl:scale-[1]  xl:w-[1280px] xl:h-[980px]  2xl:w-[2237px] 2xl:h-[1131px] object-cover object-top hidden md:block z-0 pointer-events-none"
+/>
 
-      <div className="absolute bottom-5  md:-bottom-2 lg:bottom-0 xl:bottom-2 2xl:bottom-15 hidden lg:flex z-10 left-1/2 -translate-x-1/2">
+{/* Overlay - same position/size as foreground, sits directly above it */}
+<img
+  src="/hero/overlay-final.png"
+  alt=""
+  className="absolute md:bottom-[-250] lg:bottom-[-350] xl:bottom-[-260] 2xl:bottom-[-230] lg:w-[2000px] lg:h-[600px] xl:w-[2282px]  xl:h-[650px] 2xl:w-[2382px] 2xl:h-[665px] left-1/2 -translate-x-1/2  object-cover object-top hidden md:block z-[1] pointer-events-none"
+/>
+
+<img
+  src="/hero/mobile-foreground.png"
+  alt=""
+  className="absolute bottom-0 w-full object-cover object-top md:hidden h-[590px] z-0"
+/>
+
+      <div className="absolute bottom-5  md:bottom-2 lg:bottom-0 xl:bottom-2 2xl:bottom-15 hidden md:flex z-10 left-1/2 -translate-x-1/2">
         <ScrollButton />
       </div>
     </section>

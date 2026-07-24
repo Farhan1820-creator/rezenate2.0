@@ -91,15 +91,15 @@ function AccordionItem({
         aria-expanded={isOpen}
       >
         <span
-          className="font-readex font-light text-center text-[#9564F4] shrink-0 text-[32px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] leading-[114%] tracking-[-4%]"
+          className="font-readex-pro font-light text-center text-[#9564F4] shrink-0 text-[32px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] leading-[114%] tracking-[-4%]"
         >
           {step.number}
         </span>
 
-        <span className="w-px self-stretch hidden md:block bg-purple-300/50 shrink-0" />
+        <span className="w-px absolute  left-17 h-12  top-3 bottom-0 md:static md:h-auto md:self-stretch  bg-purple-300/50 shrink-0" />
 
         <span
-          className="font-readex text-center md:text-left font-normal text-black capitalize shrink-0 w-24 md:w-32 lg:w-40 text-[18px] md:text-[24px] lg:text-[28px] xl:text-[32px] leading-[90%]"
+          className="font-readex text-left absolute left-20  md:static font-normal text-black capitalize shrink-0 w-24 md:w-32 lg:w-40 text-[22px] md:text-[24px] lg:text-[28px] xl:text-[32px] leading-[90%]"
         >
           {step.title}
         </span>
@@ -127,10 +127,10 @@ function AccordionItem({
               isOpen ? "opacity-100 translate-y-0 delay-100" : "opacity-0 -translate-y-2"
             }`}
           >
-            <p className="font-outfit font-normal text-black px-8 pb-2 md:hidden text-[16px]">
+            <p className="font-outfit font-normal text-black px-4 pb-2 md:hidden text-[16px]">
               {step.subtitle}
             </p>
-            <p className="font-outfit font-normal text-black/80 px-8 pb-6 text-[13px] md:text-[15px] lg:text-[18px] leading-[140%]">
+            <p className="font-outfit font-normal text-black/80 px-4 pb-6 text-[13px] md:text-[15px] lg:text-[18px] leading-[140%]">
               {step.description}
             </p>
           </div>
@@ -148,19 +148,25 @@ export default function HowWePartner() {
   };
 
   return (
-    <section id="how-we-partner" className="relative py-0 px-4 bg-background bg-[url('/hwp/background.webp')] bg-cover bg-center   ">
-      <div className="absolute top-0 left-0 right-0  " />
+  <section id="how-we-partner" className="scroll-mt-[10vh] relative overflow-hidden px-[16px] md:px-3 ">
+    {/* background layers */}
+    <div className="absolute inset-0 -z-30 bg-background" />
+    <div className="absolute inset-0 -z-20 bg-[url('/hwp/bg-image.png')] bg-cover bg-center bg-no-repeat" />
+    <div className="absolute top-0 left-0 right-0 z-10 w-[2382px]  h-[372px] bg-[url('/hwp/upper-gradient.png')] bg-cover bg-bottom bg-no-repeat" />
+    <div className="absolute bottom-0 2xl:bottom-[-80] left-0 right-0 z-10 w-[2382px] h-[414px] bg-[url('/hwp/lower-gradient.png')] bg-cover bg-top bg-no-repeat" />
 
-      <h2 className=" relative z-1 font-readex-pro text-center text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] mb-4">
+    {/* content */}
+    <div className="relative z-10 py-12 md:py-15 lg:py-18 xl:py-25  ">
+      <h2 className="font-readex-pro text-center text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] mb-4">
         How We <span className="font-tartuffo text-[#9564F4]">partner</span>
       </h2>
-      <p className="relative z-1 font-outfit text-center text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px] text-black max-w-full md:max-w-xl lg:max-w-3xl 2xl:max-w-[50%] mx-auto mb-12 tracking-wide">
+      <p className="font-outfit text-center text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px] text-black max-w-full md:max-w-xl lg:max-w-3xl 2xl:max-w-[50%] mx-auto mb-12 tracking-wide">
         We partner with founders and boards to introduce leaders who strengthen culture
         and build momentum without losing what makes the company human. Every engagement
         moves through five deliberate stages.
       </p>
 
-      <div className="relative max-w-4xl md:max-w-[95%] lg:max-w-[80%] 2xl:max-w-[59%] mx-auto flex flex-col gap-5 ">
+      <div className="max-w-4xl md:max-w-[95%] lg:max-w-[80%] 2xl:max-w-[59%] mx-auto flex flex-col gap-5">
         {PARTNER_STEPS.map((step, index) => (
           <motion.div
             key={step.id}
@@ -177,7 +183,8 @@ export default function HowWePartner() {
           </motion.div>
         ))}
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 }
 

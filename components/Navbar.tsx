@@ -38,7 +38,7 @@ export default function Navbar() {
 
   // Toggle navbar background after 70vh scroll
   useEffect(() => {
-    const threshold = window.innerHeight * 0.7;
+    const threshold = window.innerHeight * 0.1;
 
     const handleScroll = () => {
       setScrolled(window.scrollY > threshold);
@@ -73,10 +73,12 @@ export default function Navbar() {
   return (
     <header
       className={`fixed w-full top-0 left-0 z-50 flex items-center justify-center transition-all duration-300  ${
-        scrolled ? "bg-white shadow-md py-3 duration-300" : "bg-transparent"
+        scrolled ? "bg-white shadow-md py-2 duration-300" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center text-center justify-between w-full auto-width pt-5 px-[16px] md:px-3  ">
+      <div className={`flex items-center text-center justify-between w-full auto-width  px-[16px] md:px-3  ${
+        scrolled ? "py-2 md:py-5" : "pt-4 md:pt-5"
+      }`} >
         <Link href="#home">
           <Logo />
         </Link>

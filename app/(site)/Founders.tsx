@@ -17,7 +17,7 @@ const FOUNDERS: Founder[] = [
     id: "zak",
     name: "Zak",
     role: "The Alchemist",
-    quote: "““Leadership begins with honesty and not hierarchy.””",
+    quote: "“Leadership begins with honesty and not hierarchy.”",
     description:
       "Zak brings clarity to who companies are, what they stand for, and who should lead them next.",
     image: "/founders/zak.png",
@@ -26,7 +26,7 @@ const FOUNDERS: Founder[] = [
     id: "chloe",
     name: "Chloe",
     role: "The Architect",
-    quote: "““We built Rezenate to make leadership feel human again.””",
+    quote: "“We built Rezenate to make leadership feel human again.”",
     description:
       "Chloe brings structure, psychology, and emotional intelligence to every engagement, ensuring great partnerships are built to last.",
     image: "/founders/chloe.png",
@@ -43,16 +43,16 @@ function FounderCard({ founder, index }: { founder: Founder; index: number }) {
         opacity: { duration: 0.6, ease: "easeOut", delay: index * 0.2 },
         y: { duration: 0.7, ease: "easeOut", delay: index * 0.2 },
       }}
-      className="relative rounded-[30px]  md:rounded-[40px] overflow-hidden w-[350px] h-[470px] md:w-[330px] md:h-[450px] lg:w-[445px] lg:h-[580px] xl:w-[490px] xl:h-[621px]  2xl:w-[542px] 2xl:h-[651px]   mix-blend-multiply shadow-[0px_4px_20px_5px_rgba(148,100,244,0.22)]  hover:shadow-[0px_4px_20px_5px_rgba(148,100,244,0.3)] cursor-pointer duration-300"
+      className="relative rounded-[30px]  md:rounded-[40px] overflow-hidden w-[320px] h-[440px] md:w-[330px] md:h-[450px] lg:w-[445px] lg:h-[580px] xl:w-[490px] xl:h-[621px]  2xl:w-[542px] 2xl:h-[651px]   mix-blend-multiply shadow-[0px_4px_20px_5px_rgba(148,100,244,0.22)]  hover:shadow-[0px_4px_20px_5px_rgba(148,100,244,0.3)]  duration-300"
     >
       {/* Background layer — fixed, decoupled from content so it never distorts */}
       <div
-        className="absolute inset-0 bg-[url('/founders/card-bg.webp')] bg-cover bg-center -z-10"
+        className="absolute inset-0 bg-[url('/founders/card-bg.png')] bg-cover bg-center -z-10"
       />
 
       {/* Content block — Figma: 394x468, centered inside the 542x651 card */}
-      <div className="relative h-full flex flex-col items-center gap-2 md:gap-3 lg:gap-4 2xl:gap-4 px-4 lg:px-6 xl:px-8 pt-22 2xl:px-12 ">
-        <div className="relative w-[120px] h-[120px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px]  xl:w-[177px] xl:w-[177px] rounded-full overflow-hidden shrink-0 ">
+      <div className="relative h-full flex flex-col items-center gap-2 md:gap-3 lg:gap-4 2xl:gap-4 px-4  lg:px-6 xl:px-8 pt-16 md:pt-16 lg:pt-22 2xl:px-12 ">
+        <div className="relative w-[120px] h-[120px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px]  xl:w-[177px] xl:h-[177px] rounded-full overflow-hidden shrink-0 ">
           <Image
             src={founder.image}
             alt={founder.name}
@@ -90,7 +90,7 @@ function FounderCard({ founder, index }: { founder: Founder; index: number }) {
 
 export default function TheFounders() {
   return (
-    <section id="founders" className="relative px-[16px] md:px-3 py-12 md:py-15 lg:py-18 xl:py-20 lg:px-4 bg-background">
+    <section id="founders" className="scroll-mt-[15vh] relative px-[16px] md:px-3 py-12 md:py-15 lg:py-18 xl:py-20 lg:px-4 bg-background ">
       <h2 className="relative z-2 font-readex-pro text-center text-[32px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] xl:mb-4">
         The <span className="font-tartuffo text-[#9564F4]">founders</span>
       </h2>

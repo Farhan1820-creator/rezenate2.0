@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function LeadershipCTA() {
   return (
-    <section id="contact" className="relative overflow-hidden h-[60vh] md:h-[60vh] lg:h-[80vh] xl:h-[100vh] 2xl:h-[120vh]   py-0 flex items-center md:justify-auto justify-center bg-[url('/leadership/bg-image3.webp')] bg-cover bg-center   md:bg-cover md:bg-top bg-background">
+    <section id="contact" className="scroll-mt-[0vh] relative overflow-hidden h-[60vh] md:h-[60vh] lg:h-[80vh] xl:h-[100vh] 2xl:h-[120vh]   py-0 flex items-center md:justify-auto justify-center bg-[url('/leadership/bg-image3.webp')] bg-cover bg-center   md:bg-cover md:bg-top bg-background">
 
       {/* Foreground — rotated flower shape, top-right */}
       <div className="absolute z-0 top-[-250px]   md:right-[0]  lg:right-[-55] xl:right-0 2xl:right-[0px]  md:h-[790px]  md:w-[160px] lg:h-[1000px] lg:w-[480px]  xl:h-[1100px] xl:w-[650px]  2xl:h-[1309px] 2xl:w-[800px]">
@@ -60,7 +60,7 @@ export default function LeadershipCTA() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
-          className="font-outfit font-normal text-black text-[18px] md:text-[13px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] border border-black rounded-full px-8 py-3 hover:bg-black/5 transition-colors mt-4 md:mt-0"
+          className="font-outfit font-normal text-black text-[18px] md:text-[13px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] border border-black rounded-full px-8 py-3 hover:bg-black hover:text-white cursor-pointer duration-300 transition-colors mt-4 md:mt-0"
           style={{ lineHeight: "115%" }}
         >
           Start a Private Conversation

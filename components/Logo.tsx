@@ -6,7 +6,7 @@ export default function Logo() {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 35 35"
         fill="none"
-        className="w-[30px] h-[30px] sm:w-[36px] sm:h-[36px]"
+        className="w-[20px] h-[20px] sm:w-[36px] sm:h-[36px]"
       >
         <path
           className="animate-logo-path-1"
@@ -25,7 +25,7 @@ export default function Logo() {
         />
       </svg>
       <span className="font-bold tracking-wide text-lg leading-none">
-       <img className="h-5 sm:h-6 lg:h-7" src="/rezenate.webp" alt="" />
+       <img className="h-4 sm:h-6 lg:h-7" src="/rezenate.webp" alt="" />
       </span>
     </div>
   );

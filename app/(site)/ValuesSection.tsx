@@ -57,7 +57,7 @@ export default function ValuesSection() {
     <section
       ref={ref}
       id="next-section"
-      className="relative  py-12 md:py-15   lg:py-18 xl:py-20 md-pb-0 lg:pb-28 xl:pb-38 2xl:pb-40 w-full flex flex-col items-center justify-center bg-background overflow-hidden"
+      className="scroll-mt-[15vh] relative  py-12 md:py-15   lg:py-18 xl:py-25  w-full flex flex-col items-center justify-center bg-background overflow-hidden"
     >
       <h2 className="text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] text-center max-w-[65%] md:max-w-[65%] lg:max-w-[59%] xl:max-w-[55%] 2xl:max-w-[50%] mx-auto mb-4 md:mb-0 lg:mb-10 xl:mb-10 2xl:mb-19 font-readex-pro leading-[114.8%]">
         The way we work should reflect{" "}
@@ -94,7 +94,7 @@ export default function ValuesSection() {
                   ? "sm:relative  top-2 right-[105%] md:top-8 md:right-[136] lg:top-8 lg:right-[59] xl:top-12 xl:right-[30] 2xl:top-12 2xl:right-[50]"
                   : index === 3
                   ? "sm:relative  right-[90%] md:right-[112]  md:top-6  lg:top-6   lg:right-[18] xl:top-12 xl:right-[-18] 2xl:right-[-22] 2xl:top-16"
-                  : "sm:relative  right-[178%] top-8 md:top-[-5] md:right-[187%] lg:top-10 lg:right-[101%] xl:top-18 xl:right-[101%] 2xl:right-[101%] 2xl:top-25 "
+                  : "sm:relative  right-[178%] top-8 md:top-[-5] md:right-[197%] lg:top-10 lg:right-[118%] xl:top-18 xl:right-[98%] 2xl:right-[107%] 2xl:top-25 "
               }
             >
               <ValueCard item={item} />

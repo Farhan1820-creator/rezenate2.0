@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 
 export default function StrategySection() {
   return (
-    <section id="philosophy" className="relative w-full overflow-hidden bg-background h-[60vh] md:h-full ">
+    <section id="philosophy" className="scroll-mt-[2vh] relative w-full overflow-hidden bg-background h-[60vh] md:h-full bg-background ">
       {/* Full-width background image */}
       <img
-        src="/strategy/image.webp"
+        src="/strategy/bg-image.png"
         alt=""
-        className=" w-[300px] h-[450px]  md:h-full left-8 md:w-[100%] md:left-20 lg:w-[100%] lg:left-15 xl:w-[90%] xl:left-10 2xl:w-[89%] 2xl:left-5 ml-auto object-cover relative  "
+        className=" w-[300px] h-[450px]  md:h-full left-8 md:w-[100%] md:left-20 lg:w-[100%] lg:left-15 xl:w-[90%] xl:left-10  2xl:w-[90%] 2xl:left-5 ml-auto object-cover relative  "
       />
 
       {/* Text content overlay - left side */}
