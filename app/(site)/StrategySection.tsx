@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function StrategySection() {
   return (
-    <section id="philosophy" className="scroll-mt-[2vh] relative w-full overflow-hidden bg-background h-[60vh] md:h-full bg-background ">
+    <section id="philosophy" className="scroll-mt-[2vh] relative w-full overflow-hidden  h-[60vh] md:h-full bg-background ">
       {/* Full-width background image */}
       <img
         src="/strategy/bg-image.png"
@@ -24,7 +24,7 @@ export default function StrategySection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="font-readex-pro font-medium text-black text-[26px] md:text-[31px] lg:text-[36px] xl:text-[50px] 2xl:text-[60px] leading-tighter tracking-tight"
+              className="font-readex-pro font-medium text-black text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[60px] leading-[114%] tracking-tight"
             >
               Every Leader Influences A Culture Long Before They{" "}
               <span className="font-tartuffo italic text-[#9564F4] ">
